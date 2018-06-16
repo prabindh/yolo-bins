@@ -1,4 +1,4 @@
-Covers both arapaho and darknet-cpp.
+Covers both arapaho and darknet-cpp. Tested on Ubuntu 16.04
 
 Copy yolov3.weights from https://pjreddie.com/media/files/yolov3.weights
 
