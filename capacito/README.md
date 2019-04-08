@@ -1,4 +1,4 @@
-![Prediction](https://github.com/prabindh/yolo-bins/capacito/prediction-result.png)
+![Prediction](https://github.com/prabindh/yolo-bins/blob/master/capacito/prediction-result.png)
 
 # Auto-labelling, Training and Detection of capacitors in a PCB using Yolo-bins in 1 hour
 
