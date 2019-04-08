@@ -1,0 +1,9 @@
+classes= 3
+train  = capacitor1/capacitor-train.txt
+valid  = capacitor1/capacitor-train.txt
+labels = capacitor1/labels.txt
+names  = capacitor1/labels.txt
+backup = capacitor1/backup
+map =  capacitor1/labels.txt
+eval = imagenet
+results = results
