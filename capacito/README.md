@@ -89,3 +89,12 @@ This test-image is not a part of the training set, and thus shows some amount of
 euclidaug - Can be obtained from https://github.com/prabindh/euclid
 
 darknet - Can be obtained from https://github.com/AlexeyAB/darknet
+
+### Other references for comparison
+
+"A PCB Dataset for Defects Detection and Classification", Weibo Huang, Peng Wei, 2019, https://arxiv.org/pdf/1901.08204.pdf
+
+"[OpenR8 solution] Image_PCB_DefectDetection_SSD512_Caffe (Using deep learning Caffe framework and SSD 512 algorithm for defect detection on PCB)", https://www.openrobot.club/article/index?sn=11178
+
+"Capacitor Detection in PCB Using YOLO Algorithm", Yih-Lon Lin ; Yu-Min Chiang ; Hsiang-Chen Hsu, 2018,
+https://ieeexplore.ieee.org/document/8520170/
