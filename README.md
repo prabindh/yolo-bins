@@ -5,3 +5,5 @@
 
 ## Prebuilt binaries for end to end Yolo training for detecting capacitors on a printed circuit board (PCB)
 - Windows
+
+https://github.com/prabindh/yolo-bins/tree/master/capacito
