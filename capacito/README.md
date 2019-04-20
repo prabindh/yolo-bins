@@ -17,6 +17,7 @@ Binaries built with vs2017
 - Download CUDNN for CUDA10.0 from Nvidia website (requires registration)
 - Download OpenCV3.4.3 dll from [https://opencv.org/releases.html]
 The opencv DLL (opencv_world343.dll) should be placed in the same folder as darknet.exe
+- Download pre-trained Yolo v2 weights file from - https://pjreddie.com/media/files/darknet19_448.conv.23
 
 ## Step2: Auto-object-labelling with Euclidaug: [Time taken - 1 minute]
 `(Update PATH-TO with the full path to the folder)`
