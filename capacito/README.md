@@ -1,6 +1,7 @@
 ![Prediction](https://github.com/prabindh/yolo-bins/blob/master/capacito/prediction-result.png)
+![Prediction2](https://github.com/prabindh/yolo-bins/blob/master/capacito/prediction-result-squeezedet-keras.png)
 
-# Auto-labelling, Training and Detection of capacitors in a PCB using Yolo-bins in 1 hour
+# Auto-labelling, Training and Detection of capacitors in a PCB using Yolo/Squeezedet in 1 hour
 
 One of the most time consuming tasks in object detection is labelling. 
 This post shows how to perform this automatically and complete the detection task in under an hour of work, for a 3-class model.
@@ -90,6 +91,8 @@ This test-image is not a part of the training set, and thus shows some amount of
 euclidaug - Can be obtained from https://github.com/prabindh/euclid
 
 darknet - Can be obtained from https://github.com/AlexeyAB/darknet
+
+squeezedet-keras - Can be obtained from https://github.com/prabindh/squeezedet-keras (from https://github.com/omni-us/squeezedet-keras)
 
 ### Other references for comparison
 
