@@ -6,7 +6,7 @@
 One of the most time consuming tasks in object detection is labelling. 
 This post shows how to perform this automatically and complete the detection task in under an hour of work, for a 3-class model.
 
-## Platform:
+## Platform: (Linux OS Ubuntu 22.04 tested)
 Windows 10, x64
 CPU: Core i7 Desktop
 GPU: Titan GV100
@@ -18,6 +18,8 @@ Binaries built with vs2017
 - Download CUDNN for CUDA10.0 from Nvidia website (requires registration)
 - Download OpenCV3.4.3 dll from [https://opencv.org/releases.html]
 The opencv DLL (opencv_world343.dll) should be placed in the same folder as darknet.exe
+(Non-openCV version of darknet can be built by specifying OPENCV=0,CUDNN=0 in the darknet-cpp builds)
+
 - Download pre-trained Yolo v2 weights file from - https://pjreddie.com/media/files/darknet19_448.conv.23
 
 ## Step2: Auto-object-labelling with Euclidaug: [Time taken - 1 minute]
@@ -35,7 +37,10 @@ The opencv DLL (opencv_world343.dll) should be placed in the same folder as dark
 
 `copy capacitor-train.txt ..\capacitor1\capacitor-train.txt`
 
-## Step3: Training to generate the model: [Time taken - 1 hour]
+## Step3: Training to generate the model: [Time taken - 15 mins to 1 hour]
+
+`wget https://pjreddie.com/media/files/darknet19_448.conv.23`
+
 `cd <PATH-TO>yolo-bins\capacito\`
 
 `darknet.exe detector train capacitor1/3class.data capacitor1/yolov2.cfg darknet19_448.conv.23`
