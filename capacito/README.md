@@ -40,7 +40,7 @@ The opencv DLL (opencv_world343.dll) should be placed in the same folder as dark
 
 `darknet.exe detector train capacitor1/3class.data capacitor1/yolov2.cfg darknet19_448.conv.23`
 
-The default configuration generates a model file every 1000 iterations. For this run, 4000 iterations are found to be sufficient, hence capacitor1/backup/yolov2_4000.weights file is used. Training can be stopped after this. It takes less than an hour on a GV100 GPU.
+The default configuration generates a model file every 1000 iterations. For this run, 4000 iterations are found to be sufficient, hence capacitor1/backup/yolov2_4000.weights file is used. Training can be stopped after this. It takes less than an hour on a GV100 GPU., or less than 15 minutes on RTX3090.
 
 Sample logs from last 4k run is below:
 
@@ -68,9 +68,15 @@ If unable to allocate CUDA memory, the field "subdivisions=16" can be increased 
 
 ## Step4: Testing - Predicting the classes:
 
-`darknet.exe detector test capacitor1/3class.data capacitor1/yolov2.cfg capacitor1/backup/yolov2_4000.weights capacitor1/TEST/TEST-CAP2.jpg`
+Copy the "data" folder from darknet repo, into yolo-bins/capacito/data
+Copy the "darknet-cpp" binary from darknet repo, built as from previous instructions, into yolo-bins/capacito/
 
-<...>
+Run the below command, from the  yolo-bins/capacito folder.
+
+`./darknet.exe detector test capacitor1/3class.data capacitor1/yolov2.cfg capacitor1/backup/yolov2_4000.weights TEST/TEST-8.jpg`
+
+
+
 Loading weights from capacitor1/backup/yolov2_4000.weights...
  seen 64
 Done!
